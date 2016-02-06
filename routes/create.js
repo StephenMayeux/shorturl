@@ -17,7 +17,7 @@ router.get('/*?', function(req, res, next) {
       URL.saveURL(newURL, function(err, data) {
         if (err) throw err;
       });
-      res.json({"original_url": req.params[0], "shortened_url": "https://shortenedurl.herokuapp.com/" + numDocs});
+      res.json({"original_url": req.params[0], "shortened_url": "https://stephenshorts.herokuapp.com/" + numDocs});
     });
   } else {
     res.json({"error": "This is not a valid URL. Please try again"});
