@@ -11,7 +11,7 @@ var create = require('./routes/create');
 
 var app = express();
 
-mongoose.connect(process.env.MONGLAB_URI || 'mongodb://localhost/shorturl');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/shorturl');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
